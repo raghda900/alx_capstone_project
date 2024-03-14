@@ -43,5 +43,8 @@ toggle.querySelector("input").addEventListener("change", (e) => {
     list.forEach(cal => cal.active = e.target.checked);
     calendar.setConfig({calendars: list})
     fixToggle();
-    updateDatepicker(calendar.getState().mode); // !!! need manually update lefthand calendar visibility
+    updateDatepicker(calendar.getState().mode); 
+    // !!! need manually update lefthand calendar visibility
+    const leftCalendar = document.getElementById('left-calendar');
+leftCalendar.style.display = 'block';
 });
