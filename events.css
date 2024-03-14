@@ -1,0 +1,148 @@
+:root {
+	--m_c: #000;
+	--p_c: #0288dd;
+	--p_h_c: #03a9f4;
+	--g_c: #ededed;
+	--g_b_c: #e0e0e0;
+	--font_s: 14px;
+	--font_f: "Roboto", Arial, sans-serif;
+	--l_h: 20px;
+	--gutter: 20px;
+}
+
+*, *:before, *:after {
+	  outline: none;
+	  box-sizing: border-box;
+}
+
+html, body {
+	  margin: 0;
+	  padding: 0;
+}	
+
+body {
+	background: var(--g_c);
+	color: var(--m_c);
+	font-family: var(--font_f);
+	font-size: var(--font_s);
+	line-height: var(--l_h);
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+	text-align: left;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+header,
+footer {
+	display: block;
+}
+
+a {
+	text-decoration: none;
+	color: var(--p_c);
+	transition: color 0.15s ease-in-out;
+}
+
+a:hover {
+	text-decoration: none;
+	color: var(--p_h_c);
+}
+
+.g-btn {
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	max-width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-family: var(--font_f);
+	font-weight: 500;
+	color: #fff;
+	background: var(--p_c);
+	cursor: pointer;
+	font-size: var(--font_s);
+	line-height: var(--l_h);
+	letter-spacing: normal;
+	padding: 6px 16px;
+	border: none;
+	border-radius: 16px;
+	transition: background-color 0.2s ease-in-out;
+}
+.g-btn:hover,
+.g-btn:active,
+.g-btn:focus {
+	color: #fff;
+	background: #027abc;
+}
+.g-btn.g-btn--sm {
+	font-weight: 400;
+	padding: 4px 12px;
+}
+
+.g-btn-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 7px calc(var(--gutter) - 4px);
+}
+
+.g-btn-row .g-btn {
+	margin: 4px;
+}
+
+.g-btn-row + #root {
+	border-top: 1px solid #ccc;
+}
+
+.g-wrap {
+	position: relative;
+	height: 100vh;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+}
+
+.g-main {
+	flex: auto;
+	padding: 90px var(--gutter);
+	width: 100%;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: 1px solid var(--g_b_c);
+	border-right: 1px solid var(--g_b_c);
+	background: #ffffff;
+}
+
+#root {
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+#label {
+	display: inline-block;
+	width: 35px;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.g-container {
+	flex: auto;
+	padding: calc(var(--gutter) / 2);
+	background: #fff;
+}
+
+.g-line {
+	padding: calc(var(--gutter) / 2);
+}
