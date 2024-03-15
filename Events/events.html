@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<link rel="stylesheet" href="https://snippet.dhtmlx.com/codebase/assets/css/eventCalendar_demos.css">
+<link href="events.css" rel="stylesheet" type="text/css" />
 <div class="g-wrap">
     <!-- Event Calendar container -->
     <div id="root"></div>
@@ -36,8 +36,7 @@
 .wx-event-calendar-wrapper.wx-event-calendar-show {
     gap: 10px;
 }
-
-.no-calendar > .calendar {
+*.no-calendar > .calendar {
     display: none !important;
 }
 .no-calendar .wx-event-calendar-title {
@@ -57,7 +56,7 @@
 }
 </style>
 <!-- dataset -->
-<script>
+<script src="events.js">
   const events = [
     {
       id: "1",
