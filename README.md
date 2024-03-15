@@ -3,10 +3,10 @@
 *ALX Capstone Project: Event Scheduler
 
 *Project Overview:
-Event Scheduler is a web application that allows users to create and mage Events based on details user need to do that. The project aims to provide a convenient solution for users who are looking for deale with familer web.to control his Events ideas or place or Number of attendees or speskers and so many other details also view theas Events. 
+Event Scheduler is a web application that allows users to create and mage Events based on details user need to do that. The project aims to provide a convenient solution for users who are looking for deale with familer web.to control his Events ideas or place or Number of attendees or speskers and so many other details also view theas Events.
 
 *Features and Functionality:
-Event Scheduler: 
+Event Scheduler:
 ⏰ Schedule Events: Plan and organize your tasks, appointments, and reminders with ease. The event scheduler allows you to set specific dates, times, and durations for each event.
 
 🔔 Customizable Notifications: Stay on top of your schedule with personalized notifications. Receive reminders, alerts, or pop-ups to ensure you never miss an important event.
@@ -22,7 +22,6 @@ HTML
 CSS
 JavaScript
 
-
 *Screenshots or Demo:
 
 *Roadmap and Future Enhancements:
@@ -32,6 +31,5 @@ JavaScript
 2-Social Sharing: Enable users to share events or their social media platforms.
 
 *contact information:
-Email: Raghda.soud90@gmail.com
+Email: <Raghda.soud90@gmail.com>
 NO.:  +2 01024098307
-
