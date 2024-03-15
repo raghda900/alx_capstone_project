@@ -51,24 +51,5 @@ leftCalendar.style.display = 'block';
 
 
 
-//[
-    {
-      "id":"1",
-      "text":"Calendar Event 1",
-      "start":"2023-02-25T10:30:00",
-      "end":"2023-02-25T16:30:00"
-    },
-    {
-      "id":"2",
-      "text":"Calendar Event 2",
-      "start":"2023-02-24T09:00:00",
-      "end":"2023-02-24T14:30:00"
-    },
-    {
-      "id":"3",
-      "text":"Calendar Event 3",
-      "start":"2023-02-27T12:00:00",
-      "end":"2023-02-27T16:00:00"
-    }
-    
+
   
