@@ -16,38 +16,70 @@
         Creat & mange Events
       </h1><br><br>
      </header>
-     <form action="data.html">
+     <form action="data.html" method="post">
       <label>
         Event title
       </label>
-      <input>
+      <input name="event name">
+      <br><br>
+      <label>
+        Event categories
+      </label>
+      
+      <select name ="categories">
+        <option disabled selected >Attendance-Based</option>
+        <option value="1">sports</option>
+        <option value="2">conferences</option>
+        <option value="3">Expos</option>
+        <option value="4">concerts</option>
+        <option value="5">Festivals</option>
+        <option value="6">performing Arts</option>
+        <option value="7">community</option>
+        <option disabled selected >Non-Attendance-Based</option>
+        <option value="8">public holidays</option>
+        <option value="9">school holiday</option>
+        <option value="10">Observances</option>
+        <option value="11">politics</option>
+        <option value="12">Daylight Savings</option>
+        <option value="13">Academic</option>
+        <option disabled selected >Unscheduled Events</option>
+        <option value="14">Airport Delags</option>
+        <option value="15">severe weather</option>
+        <option value="16">Disasters</option>
+        <option value="17">Terror attacks</option>
+        <option value="18">health warnings</option>
+        <option value="19">protests</option>
+        <option disabled selected >Live  Events</option>
+        <option value="20">Live Events</option>
+      </select>
+      
       <br><br>
       <label>
         Start Date/time
       </label>
-      <input>
+      <input name="start date/time" placeholder="16/3/2024-5pm ">
       <br><br>
       <label>
        End Date/time
       </label>
-      <input>
+      <input name="end date/time" placeholder="16/3/2024-5pm">
       <br><br>
       <label>
         Event Location
        </label>
-       <input>
+       <input name="event location">
        <br><br>
        <label>
         Speakers
        </label>
-       <input>
+       <input name="speakers names">
        <br><br>
        <label>
         Event Description
        </label>
-       <input>
+       <input name="event description">
        <br><br>
-       <input type="submit" value="creat" alin="center">
+       <input type="submit" value="creat" >
  
  
  
