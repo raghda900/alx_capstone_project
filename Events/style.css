@@ -1,3 +1,7 @@
+body{
+	background-color: bisque;
+	color: dodgerblue;
+}
 :root {
 	--m_c: #000;
 	--p_c: #0288dd;
