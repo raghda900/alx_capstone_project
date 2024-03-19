@@ -18,6 +18,11 @@ body {
     text-align: left;
     font-size: 200%;
     text-align: justify;
+    color: cornflowerblue;
+  }
+  .logo-flex{
+    display: flex;
+    flex-direction: row;
   }
   background-color: bisque;
   color: dodgerblue;
