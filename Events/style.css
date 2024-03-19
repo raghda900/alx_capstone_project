@@ -14,11 +14,11 @@ body {
   img{
     vertical-align:baseline
   }
- .r{
-    text-size-adjust: 300;
-    text-align:left;
+  .data-labels{
+    text-align: left;
+    font-size: 200%;
+    text-align: justify;
   }
-  
   background-color: bisque;
   color: dodgerblue;
 }
