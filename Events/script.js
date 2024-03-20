@@ -1,5 +1,7 @@
 'use strict';
-const locale = eventCalendar.en;
+const ceat_button =document.getElementById('creat')
+console.log(creat_button);
+/*const locale = eventCalendar.en;
 locale.calendar.weekStart = 1;
 
 const calendar = new eventCalendar.EventCalendar("#root", {
@@ -30,7 +32,7 @@ calendar.api.on("set-mode", (obj) => {
 
 /* select all toggle */
 
-const toggle = document.querySelector("#select-all-container");
+/*const toggle = document.querySelector("#select-all-container");
 function fixToggle(){
     document.querySelector("#root .wx-event-calendar-calendars_wrapper").appendChild(toggle);
 }
