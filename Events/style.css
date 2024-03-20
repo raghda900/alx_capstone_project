@@ -16,14 +16,25 @@ body {
   }
   .data-labels{
     text-align: left;
-    font-size: 200%;
+    font: size 0 20px;
     text-align: justify;
     color: cornflowerblue;
     justify-content:center;
+    padding: auto;
   }
   .logo-flex{
     display: flex;
     flex-direction: row;
+  }
+  .bton{
+    background-color: aquamarine;
+    border: 0;
+    border-radius: 5px;
+    color: var(--white);
+    font-size:20px;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin: 15px;
   }
   background-color: bisque;
   color: dodgerblue;
