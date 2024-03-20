@@ -5,21 +5,27 @@ input_data.addEventlistener(function () {});
 let keys = Object.keys(input_data);
 console.log(keys);
 
-const addNewEvent = () => {
-  const event = {
-    EventTitle: form.EventTitle.value,
-    categories: form.categories.value,
-    startDateTime: form.startDateTime.value,
-    endDateTime: form.endDateTime.value,
-    eventLocation: form.eventLocation.value,
-    speakers: form.speakers.value,
-    description: form.description.value,
-  };
-  const creat_button = document.getElementById("creat");
-  const view_mange=document.getElementById("view")
-  const view = (event, id) => {
-	const {EventTitle, categories, startDateTime,endDateTime,speakers, description} = event
-  
+const addNewEvent = () => {};
+const event = {
+  EventTitle: form.EventTitle.value,
+  categories: form.categories.value,
+  startDateTime: form.startDateTime.value,
+  endDateTime: form.endDateTime.value,
+  eventLocation: form.eventLocation.value,
+  speakers: form.speakers.value,
+  description: form.description.value,
+};
+const creat_button = document.getElementById("creat");
+const view_mange = document.getElementById("view");
+const view = (event, id) => {
+  const {
+    EventTitle,
+    categories,
+    startDateTime,
+    endDateTime,
+    speakers,
+    description,
+  } = event;
 
   script
     .collection("events")
@@ -41,31 +47,31 @@ const addNewEvent = () => {
 
 let bookedEvents = [];
 const bookEvent = (booked, id) => {
-	const getBookedEvents = localStorage.getItem('booked-events');
-  
-	  if (getBookedEvents) {
-	   bookedEvents = JSON.parse(localStorage.getItem('booked-events'));
-		if(bookedEvents.includes(id)) {
-		  alert('Seems like you have already booked this event') 
-		} 
-		else {
-		  saveBooking(booked, id)
-	   }
-	  } 
-	  else {
-		  saveBooking(booked, id)
-	  }
-  };
-  
-  const saveBooking = (booked, id) => {
-	  bookedEvents.push(id);
-	  localStorage.setItem('booked-events', JSON.stringify(bookedEvents));
-  
-	  const data = { booked: booked +1 }
-	  db.collection('events').doc(id).update(data)
-	  .then(() => alert('Event successfully booked'))
-	  .catch(err => console.log(err))
+  const getBookedEvents = localStorage.getItem("booked-events");
+
+  if (getBookedEvents) {
+    bookedEvents = JSON.parse(localStorage.getItem("booked-events"));
+    if (bookedEvents.includes(id)) {
+      alert("Seems like you have already booked this event");
+    } else {
+      saveBooking(booked, id);
+    }
+  } else {
+    saveBooking(booked, id);
   }
+};
+
+const saveBooking = (booked, id) => {
+  bookedEvents.push(id);
+  localStorage.setItem("booked-events", JSON.stringify(bookedEvents));
+
+  const data = { booked: booked + 1 };
+  db.collection("events")
+    .doc(id)
+    .update(data)
+    .then(() => alert("Event successfully booked"))
+    .catch((err) => console.log(err));
+};
 
 //calender//
 const locale = eventCalendar.en;
@@ -117,4 +123,4 @@ toggle.querySelector("inputdata").addEventListener("change", (e) => {
   // !!! need manually update lefthand calendar visibility
   const leftCalendar = document.getElementById("left-calendar");
   leftCalendar.style.display = "block";
-})
+});
