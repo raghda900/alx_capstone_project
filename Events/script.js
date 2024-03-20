@@ -1,3 +1,4 @@
+'use strict';
 const locale = eventCalendar.en;
 locale.calendar.weekStart = 1;
 
