@@ -36,6 +36,12 @@ body {
     cursor: pointer;
     margin: 15px;
   }
+  .inputdata{
+    margin: auto;
+    box-shadow: 0 10px 42px rgba(25,17,34,.1);
+    padding: 1rem 1rem;
+    text-align:justify;
+  }
   background-color: bisque;
   color: dodgerblue;
 }

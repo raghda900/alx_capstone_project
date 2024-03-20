@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta name="viewport" content="width=device-width">
-  <title>Creat&mange</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
-    
-</head>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Creat&mange</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
 
   <body>
     <a href="index.html" class="bton">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="view.html" class="bton">View</a>
-     <header>
-      <h1 alighn ="center">
-        Creat & mange Events
-      </h1><br><br>
-     </header>
-     <form action="data.html" method="post">
-      <label class="data-labels">
-        Event title
-      </label>
-      <input name="event name"autofocus size="50">
-      <br><br>
-      <label class="data-labels">
-        Event categories
-      </label>
-      
-      <select name ="categories" class="data-labels">
-        <option disabled selected >Attendance-Based</option>
+    <a href="view.html" class="bton" id="view">View</a>
+    <header>
+      <h1 alighn="center">Creat & mange Events</h1>
+      <br /><br />
+    </header>
+    <!-- form-->
+
+    <form>
+      <label> Event title </label>
+      <input name="EventTitle" size="100" class="inputdata" />
+      <!--<input type="text" id="name" placeholder="Name"  />-->
+      <br /><br />
+      <label class="data-labels"> Event categories </label>
+
+      <select name="categories" class="inputdata">
+        <option disabled selected>Attendance-Based</option>
         <option value="1">sports</option>
         <option value="2">conferences</option>
         <option value="3">Expos</option>
@@ -35,57 +31,55 @@
         <option value="5">Festivals</option>
         <option value="6">performing Arts</option>
         <option value="7">community</option>
-        <option disabled selected >Non-Attendance-Based</option>
+        <option disabled selected>Non-Attendance-Based</option>
         <option value="8">public holidays</option>
         <option value="9">school holiday</option>
         <option value="10">Observances</option>
         <option value="11">politics</option>
         <option value="12">Daylight Savings</option>
         <option value="13">Academic</option>
-        <option disabled selected >Unscheduled Events</option>
+        <option disabled selected>Unscheduled Events</option>
         <option value="14">Airport Delags</option>
         <option value="15">severe weather</option>
         <option value="16">Disasters</option>
         <option value="17">Terror attacks</option>
         <option value="18">health warnings</option>
         <option value="19">protests</option>
-        <option disabled selected >Live  Events</option>
+        <option disabled selected>Live Events</option>
         <option value="20">Live Events</option>
       </select>
-      
-      <br><br>
-      <label class="data-labels">
-        Start Date/time
-      </label>
-      <input name="start date/time" type="datetime-local"size="100"rows="100" cols="100">
-      <br><br>
-      <label class="data-labels">
-       End Date/time
-      </label>
-      <input name="end date/time" type="datetime-local"size="100"rows="100" cols="100">
-      <br><br>
-      <label class="data-labels">
-        Event Location
-       </label>
-       <input name="event location"size="100">
-       <br><br>
-       <label class="data-labels">
-        Speakers
-       </label>
-       <input name="speakers names"size="70"cols="30">
-       <br><br>
-       <label class="data-labels">
-        Event Description
-       </label>
-       <br><br>
-       <textarea name="message" rows="10" cols="50"></textarea>
-       <br><br>
-       <input type="submit" value="creat" class="bton" id="creat">
- 
- 
- 
-     </form>
-     <script src="./js/script.js"></script>  
-  </body>
 
-    </html>
+      <br /><br />
+      <label class="data-labels"> Start Date/time </label>
+      <input name="startDateTime" type="datetime-local" class="inputdata" />
+      <br /><br />
+      <label class="data-labels"> End Date/time </label>
+      <input name="endDateTime" type="datetime-local" class="inputdata" />
+      <br /><br />
+      <label class="data-labels"> Event Location </label>
+      <input name="eventLocation" size="100" class="inputdata" />
+      <br /><br />
+      <label class="data-labels"> Speakers </label>
+      <input name="speakers" size="70" cols="30" class="inputdata" />
+      <br /><br />
+      <label class="data-labels"> Event Description </label>
+      <br /><br />
+      <textarea
+        name="description"
+        rows="10"
+        cols="50"
+        class="inputdata"
+        id="description"
+        cols="30"
+        rows="10"
+        placeholder="Event Description"
+      ></textarea>
+      <br /><br />
+      <div>
+        <input type="submit" value="creat" class="bton" id="creat" />
+      </div>
+    </form>
+    <!-- -->
+    <script src="script.js"></script>
+  </body>
+</html>

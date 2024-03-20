@@ -46,8 +46,20 @@
         </td>
         <td>
          Event data
+         <script>
+          document.addEventListener('DOMContentLoaded',function(){
+            var calendarEl=Document.getElementById('calender');
+            var calender= new FullCalender.calendar(calenderEl,{
+              initialview:'dayGridMonth'
+            });
+            calendar.render();
+          });
+          
+         </script>
         </td>
-
+<div id='calendar'>
+  
+</div>
       </tr>
       <tr>
         
@@ -61,7 +73,7 @@
       </tr>
     </table>
     
-    <script src="./js/script.js"></script>
+    <script src="script.js"></script>
     </body>
 
     </html>
