@@ -39,7 +39,33 @@ const addNewEvent = () => {
     .catch((err) => console.log(err));
 };
 
-let events = [];
+let bookedEvents = [];
+const bookEvent = (booked, id) => {
+	const getBookedEvents = localStorage.getItem('booked-events');
+  
+	  if (getBookedEvents) {
+	   bookedEvents = JSON.parse(localStorage.getItem('booked-events'));
+		if(bookedEvents.includes(id)) {
+		  alert('Seems like you have already booked this event') 
+		} 
+		else {
+		  saveBooking(booked, id)
+	   }
+	  } 
+	  else {
+		  saveBooking(booked, id)
+	  }
+  };
+  
+  const saveBooking = (booked, id) => {
+	  bookedEvents.push(id);
+	  localStorage.setItem('booked-events', JSON.stringify(bookedEvents));
+  
+	  const data = { booked: booked +1 }
+	  db.collection('events').doc(id).update(data)
+	  .then(() => alert('Event successfully booked'))
+	  .catch(err => console.log(err))
+  }
 
 //calender//
 const locale = eventCalendar.en;
